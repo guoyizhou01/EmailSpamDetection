@@ -6,6 +6,12 @@ Enron-Spam: http://nlp.cs.aueb.gr/software_and_datasets/Enron-Spam/index.html
 
 Spambase: https://archive.ics.uci.edu/dataset/94/spambase
 
+## Wordslist
+
+3000_words:
+
+5000_words: https://github.com/mahsu/IndexingExercise/blob/master/5000-words.txt
+
 ## Articles
 
 Spam Filtering with Naive Bayes – Which Naive Bayes?: https://www2.aueb.gr/users/ion/docs/ceas2006_paper.pdf
