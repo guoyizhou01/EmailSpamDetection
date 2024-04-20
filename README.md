@@ -1,22 +1,34 @@
 # EmailSpamDetection
 
+## Dependancy
+
+- Python 3.10 (Does not support Python 3.11 due to Tensorflow restriant)
+- Tensorflow 2.10
+- Keras 2.10.0
+- Numpy 1.26.4
+- Pandas 2.2.1
+
 ## Data Sets
+
+Currently, the model is trained and tested with Enron1 dataset. However, the program does accomodate different ones. To use a different dataset, load the folder to current folder, and use '''python3 fileIO.py FolderName''' to load the dataset. Then, change the name in learning.ipynb file to "data/FolderName_data.csv".
 
 Enron-Spam: http://nlp.cs.aueb.gr/software_and_datasets/Enron-Spam/index.html
 
-Spambase: https://archive.ics.uci.edu/dataset/94/spambase
-
 ## Wordslist
 
-3000_words:
+Model performance relies on using proper word list. The one currently using is 5000_words. To use a different wordlist, modification to fileIO.py is required.
+
+3000_words: https://gist.github.com/hyper-neutrino/561f120125ae0e7c1d22777eebf083c8
 
 5000_words: https://github.com/mahsu/IndexingExercise/blob/master/5000-words.txt
 
-## Articles
+## Results
+
+## Reference
 
 Spam Filtering with Naive Bayes – Which Naive Bayes?: https://www2.aueb.gr/users/ion/docs/ceas2006_paper.pdf
 
-Machine learning for email spam filtering: review, approaches and open research problems: https://pdf.sciencedirectassets.com/313379/1-s2.0-S2405844018X00073/1-s2.0-S2405844018353404/main.pdf?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEOz%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJGMEQCIENnyDmYQRHlD2i7qnQXeov%2F1%2F%2B8GZ3Scc8Zy%2BeaIMbaAiAyBEyIr1%2BO8vGlbSgOqHgS1S9Z%2Fc4YB9Yewf%2BPYXsziSq8BQi1%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAUaDDA1OTAwMzU0Njg2NSIM1vOMGDHo4lwWrFFLKpAFVd0yPEAK2C6kh4XoJ7MFuVaXMhwfJ%2FkjCXrMK%2Bnpu0zQUJxIV2hpqlik877llY0t5JfUkF6jwsrfGuXmMDVvKU7nZZynKIpCqtesEERfajYZT1hPUjTvzyAZE85tt67qF6KvrS7leuJpJdstKX6h0zSfI430qrhuFUUVh03ZXC6iEW4Zq1YoSrEYbgkypf910klOTxJpvM%2Bo0YVFogK3eLM6%2FH51hh2wRY4peLVZEQG9akKL4nAKDjDXI4F%2Bp7MsXn2uPsN6odYitD4GbUvMXVuvgVs%2BkQG27q2qI0yBs4S%2BXAPs9%2FpY4T%2FJTGaTu8EXlch6Sx0mWQzywJbm0zVUZRImoXtF5SGZMEyMUabzixNOuVokU9ELxeNMC2LUZcA7ujF22PFoYtLYWMs1S2GrEdrki0E6NlGlzrXWEbP3FPciqz%2BMEncR5ikt%2FcbX%2BfR%2FMovaKjXKtemN1K5qsxmwVXjEYQ8aoeb2ew4Afnw8ppUQEsz2RomYbhrPB5TjwnbBnHRWWDzs3Qk0iAfC175t%2BZJkpJbuly%2FpIZPSE0TH1HkPp2zGtAZTish1igcJ2DINLM%2FT%2FcVfxQAEsAw0PdKjCLVPQbsusVyuJH4%2BmZJoKlpXpxkqz0edBFQmgUPUzNZj64ICC3jsNG7unVMQkAzIjvecVxQwlcrLxAf6EqX7AP4TjniOLaH4bhm80SJM0%2BX4NV8XADGOvbE3%2BYhwtK5xhUr%2FIhUPxndL5GGiz8knVjXCR%2FM8B23mLwx1LRCYWMoKYMQwVghTqw5hrPq7RaJa7IJOqMeUI0QlBVrppbETOBwIuas1uvT7KYhatHae3S8BUU4hcfZnGQfkHYWmX8rnrw1DyJluHiLl05AmYrBP5VMwjN2GrgY6sgFhBed19qhS0RRbHCuyVqmnDf3syzQMXL9O9jiBKyRQji%2F690skn%2BWUFSIXPdoKaPfL8aOTZWs8payksME4eJd2Ee1DSb0idDNqE9nEf51h5FU4fkCLXMXmpw9d0iTeRSI4qb25kz2Wp56l9fpxIFvRRXv1%2BRvS7mAzkmpk2v7Yp2QdsO0qBRBUVzmZjMKg8KxsNByP0cydJgolYhwDqfLitE%2B5ukUkoyjqy3oTxMmTw0yo&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20240206T044454Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIAQ3PHCVTYVVZ3IRTH%2F20240206%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=37cdea4f8d07964ef95fb7b95c2d1410feee21a0edd1e52a1308685bff197fef&hash=24fb86bce1587aff30d14f3c96c6257967a5bb8363585cb8abfff83e041b3e50&host=68042c943591013ac2b2430a89b270f6af2c76d8dfd086a07176afe7c76c2c61&pii=S2405844018353404&tid=spdf-6acd9730-3237-454d-8c44-298f1a0c9a18&sid=1992ece56313e948536a0ea4a85313504389gxrqa&type=client&tsoh=d3d3LnNjaWVuY2VkaXJlY3QuY29t&ua=0f115b5151520704585c&rr=8510bd98a8d2b12d&cc=us
+Machine learning for email spam filtering: review, approaches and open research problems: https://www.sciencedirect.com/science/article/pii/S2405844018353404?ref=pdf_download&fr=RR-2&rr=8773bdb96f7e53ea
 
 
 
