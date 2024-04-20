@@ -24,6 +24,26 @@ Model performance relies on using proper word list. The one currently using is 5
 
 ## Results
 
+With 20 words + engineered features, the model achieved folling results:
+
+MLR: accuracy 75.8% false positive rate 12.5%
+
+SVM: accuracy 79.6% false positive rate 23.8%
+
+ANN: accuracy 84.6% false positive rate 25.5%
+
+CNN: accuracy 74.9% false positive rate 25.0% 
+
+With 800 words + 3 engineered features, the model achieved folling results:
+
+MLR: accuracy 86.7% false positive rate 7.9%
+
+SVM: accuracy 93.2% false positive rate 8.4%
+
+ANN: accuracy 95.6% false positive rate 7.7%
+
+CNN: accuracy 70.9% false positive rate 50.0%
+
 ## Reference
 
 Spam Filtering with Naive Bayes – Which Naive Bayes?: https://www2.aueb.gr/users/ion/docs/ceas2006_paper.pdf
