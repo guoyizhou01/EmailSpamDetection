@@ -10,7 +10,7 @@
 
 ## Data Sets
 
-Currently, the model is trained and tested with Enron1 dataset. However, the program does accomodate different ones. To use a different dataset, load the folder to current folder, and use '''python3 fileIO.py FolderName''' to load the dataset. Then, change the name in learning.ipynb file to "data/FolderName_data.csv".
+Currently, the model is trained and tested with Enron1 dataset. However, the program does accomodate different ones. To use a different dataset, load the folder to current folder, and use ```python3 fileIO.py FolderName``` to load the dataset. Then, change the name in learning.ipynb file to "data/FolderName_data.csv".
 
 Enron-Spam: http://nlp.cs.aueb.gr/software_and_datasets/Enron-Spam/index.html
 
