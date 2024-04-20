@@ -1,4 +1,4 @@
-# EmailSpamDetector
+# EmailSpamDetection
 
 ## Data Sets
 
